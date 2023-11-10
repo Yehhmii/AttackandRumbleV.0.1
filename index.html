@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div id="home"> 
+            <h1>Player Battle</h1>
+            <div class="container">
+                <h2>Select Your Fighter </h2>
+                <div class="characterprofile">
+                    <img id="Wind Hashira" src="Wind-Hashira.png" alt=""><br>
+                    <h2>Wind Hashira</h2>
+                    <ul>
+                        <li>Power - 60%</li>
+                        <li>Magic - 80%</li>
+                        <li>Speed - 85%</li>
+                        <li>Combat skills - 70%</li>
+                    </ul>
+                    <input type="radio" name="player" value="Wind-Hashira" id="player1" checked>
+                
+                </div>
+                <div class="characterprofile">
+                    <img id="Love Hashira" src="Love-Hashira.png" alt=""><br>
+                    <h2>Love Hashira</h2>
+                    <ul>
+                        <li>Power - 70%</li>
+                        <li>Magic - 70%</li>
+                        <li>Speed - 75%</li>
+                        <li>Combat skills - 80%</li>
+                    </ul>
+                    <input type="radio" name="player" value="Love-Hashira" id="playe2">
+                
+                </div>
+                <div class="characterprofile">
+                    <img id="Upper Moon" src="Upper-Moon.png" alt=""><br>
+                    <h2>Upper Moon</h2>
+                    <ul>
+                        <li>Power - 90%</li>
+                        <li>Magic - 75%</li>
+                        <li>Speed - 60%</li>
+                        <li>Combat skills - 80%</li>
+                    </ul>
+                    <input type="radio" name="player" value="Upper-Moon" id="player3">
+                
+                </div>
+                <div class="characterprofile">
+                    <img id="Vikin" src="Vikin.png" alt=""><br>
+                    <h2>Vikin</h2>
+                    <ul>
+                        <li>Power - 80%</li>
+                        <li>Magic - 50%</li>
+                        <li>Speed - 65%</li>
+                        <li>Combat skills - 90%</li>
+                    </ul>
+                    <input type="radio" name="player" value="Vikin" id="player4">        
+                </div>
+                <div class="characterprofile">
+                    <img id="Female Titan" src="Female-Titan.png" alt=""><br>
+                    <h2>Female Titan</h2>
+                    <ul>
+                        <li>Power - 70%</li>
+                        <li>Magic - 70%</li>
+                        <li>Speed - 80%</li>
+                        <li>Combat skills - 80%</li>
+                    </ul>
+                    <input type="radio" name="player" value="Female-Titan" id="player5">       
+                </div>
+            </div>
+    <br>
+
+            <div id="playerselection">
+                <button id="select" onclick="displayFight()">Play</button>
+            </div>
+    </div>
+
+    <div id="fight" style="display: none;">
+        <h1>Fight</h1>
+        <div class="container2">
+            <div id="gameResults">
+                <div id="sPlayersimg"></div>
+                <p id="winnerText"></p>
+            </div>
+        <div id="load" class="loading" style="display: none;"></div>
+
+           <h3 id="results"></h3>
+        </div>
+        
+        <div id="playerselection">
+            <button id="fightWinner" onclick="displayload()">Fight</button>
+        </div>
+        <div>
+            <button><a href="index.html">Play Again</a></button>
+        </div>
+
+    </div>
+
+    </div>
+   
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

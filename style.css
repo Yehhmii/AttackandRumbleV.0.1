@@ -1,0 +1,85 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    background-color: #143959;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+    background-image: url('./images/200w.gif');
+    width: 1080px;
+    height: 400px;
+    background-color: whitesmoke;
+    position: relative;
+    left: 10%;
+}
+.characterprofile{
+    display: inline-block;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+img{
+    width: 200px;  
+}
+ h2,p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#playerselection{
+    position: relative;
+    left: 45%;
+}
+button{
+    padding: 20px;
+    border-radius: 20px;
+    color:honeydew;
+}
+
+button a{
+    text-decoration: none;
+    color: honeydew;
+}
+.container2{
+    background-image: url('./images/200w\ \(1\).gif');
+    background-size:contain;
+    background-attachment: fixed;
+    width: 1080px;
+    height: 400px;
+    background-color: whitesmoke;
+    position: relative;
+    left: 10%;
+}
+#gameResults{
+    position: absolute;
+    top: 80px;
+    left: 200px;   
+}
+#sPlayersimg img{
+    width: 300px;
+    margin: 20px;
+}
+#winnerText{
+    margin: 20px;
+    text-align: center;
+
+}
+.loading{
+    background-image: url('./images/200w\ \(1\).webp');
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 885px;
+    top: 200px;
+}
+#fightWinner{
+    margin-top: 20px;
+}
+ul li{
+    color: white;
+}
